@@ -1,0 +1,15 @@
+<html>
+<body>
+    <script src="https://js.puter.com/v2/"></script>
+    <script>
+        // Use puter.ai.chat to get and display the response
+        puter.ai.chat(`What is life?`).then(response => {
+            const formattedResponse = `<pre>${response}</pre>`;
+            document.body.innerHTML += formattedResponse; // Append response to the body
+            console.log('Response from puter.ai.chat:', formattedResponse);
+        }).catch(error => {
+            console.error('Error calling puter.ai.chat:', error);
+        });
+    </script>
+</body>
+</html>
